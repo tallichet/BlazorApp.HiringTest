@@ -1,0 +1,22 @@
+﻿@page "/"
+
+@using BlazorApp.HiringTest.Client.Components
+@using BlazorApp.HiringTest.Shared;
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<EmployeeEditor Employee="_employeeData" />
+
+@code{
+    EmployeeData _employeeData = new EmployeeData
+        {
+            Name = "Cedric",
+            DateOfBirth = new DateTime(1981, 4, 6),
+        };
+}

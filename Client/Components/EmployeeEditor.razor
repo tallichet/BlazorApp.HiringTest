@@ -1,0 +1,9 @@
+﻿@using BlazorApp.HiringTest.Shared;
+<h4>Edit @Employee?.Name</h4>
+
+<NameEditor Name="@(Employee.Name)" />
+
+@code {
+    [Parameter]
+    public EmployeeData Employee { get; set; }
+}

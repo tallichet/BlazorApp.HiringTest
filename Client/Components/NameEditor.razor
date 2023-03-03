@@ -1,0 +1,14 @@
+﻿@using BlazorApp.HiringTest.Shared;
+<label>
+    Name :
+</label>
+
+@if (this.Name != null)
+{
+    <InputText @bind-Value="@Name" />
+}
+
+@code {
+    [Parameter]
+    public string Name { get; set; }    
+}
